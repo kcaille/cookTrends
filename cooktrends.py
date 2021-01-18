@@ -1,4 +1,4 @@
-pip insall scipy
+pip install scipy
 
 import streamlit as st
 
