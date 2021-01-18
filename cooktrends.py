@@ -1,3 +1,5 @@
+!pip insall scipy
+
 import streamlit as st
 
 # On import les 'apps'
