@@ -1,3 +1,4 @@
+sudo apt-get install python-scipy
 pip install scipy
 
 import streamlit as st
