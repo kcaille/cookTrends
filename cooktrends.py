@@ -1,4 +1,4 @@
-!pip insall scipy
+pip insall scipy
 
 import streamlit as st
 
