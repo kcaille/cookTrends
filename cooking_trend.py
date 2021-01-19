@@ -28,7 +28,6 @@ from nltk.corpus import stopwords
 import datetime as dt
 from datetime import datetime
 
-import webbrowser
 
 def app():
 
@@ -98,7 +97,7 @@ def app():
 ####################################################################################
 		
 		st.write('-' * 100)
-		st.title('Resultats')
+		st.title('Résultats')
 
 ####TOP RECETTES###########################################################################
 		with st.beta_expander("Top 10 des recettes les plus tendances sur la période"):
@@ -128,8 +127,11 @@ def app():
 
 				col1.subheader(top_10_recipes.iloc[row, 1])
 				col1.write(cooktrend_score)
-				col1.write(top_10_recipes.iloc[row, 0])
+				link_url = f"[Voir la recette]({top_10_recipes.iloc[row, 0]})"
+				col1.write(link_url)
+				#col1.write(top_10_recipes.iloc[row, 0])
 
+				#st.write("check out this [link](https://share.streamlit.io/mesmith027/streamlit_webapps/main/MC_pi/streamlit_app.py)")
 				col2.write(' ')
 				col2.write(' ')
 				col2.image(image_url)
@@ -324,14 +326,3 @@ def app():
 			st.pyplot(fig2)
 ############################################################################################		
 
-		st.write('-' * 100)
-
-####FIND INGREDIENTS TREND ########################################################################
-		'''
-		with st.beta_expander('Trouver les recettes tendances par ingrédients'):
-
-			veg = st.text_input('Name')
-			if st.button('Chercher'):
-				for row in range(len(data_merged[data_merged['ingredient_main'].str.contains(veg)])):
-					st.write(data_merged[data_merged['ingredient_main'].str.contains(veg)].iloc[row, 1])
-		'''

@@ -5,6 +5,7 @@ import raw_data
 import general_activity
 import cooking_trend
 import index
+import ingredient_trend
 
 import pandas as pd
 
@@ -20,7 +21,8 @@ PAGES = {
     "Accueil": index,
     "Données Sources": raw_data,
     "Analyseur d'activité": general_activity,
-    "Analyseur de tendance": cooking_trend
+    "Analyseur de tendance": cooking_trend,
+    #"Recherche  par ingrédient": ingredient_trend,
 }
 
 #Header
