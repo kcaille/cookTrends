@@ -36,7 +36,7 @@ def app():
 	st.subheader('Données source')
 
 	with st.beta_expander("Voir les données sur les recettes"):
-		st.dataframe(recipes_df,height = 500)
+		st.dataframe(recipes_df.drop(columns = 'Unnamed: 0.1'), width = 700, height = 500)
 
 	with st.beta_expander("Voir les données sur les commentaires"):
-		st.write(comments_df, height = 500)
+		st.dataframe(comments_df, height = 500)
