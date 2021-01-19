@@ -38,7 +38,7 @@ st.sidebar.write('')
 st.sidebar.write('')
 st.sidebar.write('')
 st.sidebar.title('A  propos')
-st.sidebar.info("Cette app a été créée pour le datathon organisé par la Wild Code School en partenariat avec Search Foresight.   \n Elle a été réalisée par :   \nAlexandrine NGANKIMA, Olivier ROHR, Valentin PASQUIER, Boris LACQUEMAND, Kevin CAILLE.")
+st.sidebar.info("Cette app a été créée pour le datathon organisé par la Wild Code School en partenariat avec Search Foresight.   \n Elle a été réalisée par :   \nAlexandrine NGANKIMA, Olivier ROHR, Valentin PASQUIER, Boris LACQUEMANT, Kevin CAILLE.")
 
 
 #App
